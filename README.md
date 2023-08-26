@@ -6,7 +6,7 @@ Welcome to the StandWithUkraine Project, a submission created as part of the app
 
 ## Project Overview
 
-The StandWithUkraine Project demonstrates an application that visually portrays and simulates the losses suffered by russia during the agressive war in Ukraine. This app aims to emphasize the human cost of war and prompt reflection and awareness among users and support Ukraine!
+The StandWithUkraine Project demonstrates an application that visually portrays and simulates the losses suffered by russia during the aggressive war in Ukraine. This app aims to emphasize the human cost of war prompt reflection and awareness among users and support Ukraine!
 
 ## App Features
 
@@ -24,4 +24,4 @@ To install and experience the StandWithUkraine app:
 
 ## License
 
-This project is licensed under the [License Name] - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT licence, - see the [LICENSE](LICENSE) file for details.
