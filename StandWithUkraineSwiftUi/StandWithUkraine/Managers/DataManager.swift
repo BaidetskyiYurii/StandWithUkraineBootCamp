@@ -19,7 +19,7 @@ final class DataManager: ObservableObject {
                                 completion: @escaping (Result<[T], Error>) -> Void) {
         self.viewState = .loading
         //Simulate api request
-        DispatchQueue.global().asyncAfter(deadline: .now() + 1){
+        DispatchQueue.global().asyncAfter(deadline: .now() + 1) {
             guard let url = Bundle.main.url(forResource: fileName, withExtension: fileExtension) else {
                 DispatchQueue.main.async {
                     self.viewState = .empty

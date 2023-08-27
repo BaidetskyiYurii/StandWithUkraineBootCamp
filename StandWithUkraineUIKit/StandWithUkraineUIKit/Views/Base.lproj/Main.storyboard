@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lsf-en-2EX">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Equipment-->
+        <scene sceneID="O3Q-fQ-OW2">
+            <objects>
+                <navigationController storyboardIdentifier="EquipmentNavigationController" id="lsf-en-2EX" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Equipment" id="AdL-1s-agx"/>
+                    <simulatedTabBarMetrics key="simulatedBottomBarMetrics"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Z2S-MR-uUB">
+                        <rect key="frame" x="0.0" y="59" width="393" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="tKS-fa-2YM" kind="relationship" relationship="rootViewController" id="Yjt-9l-Peg"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nQI-7i-s59" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-801" y="-87"/>
+        </scene>
+        <!--All Losses-->
+        <scene sceneID="pyt-gh-oEb">
+            <objects>
+                <viewController id="tKS-fa-2YM" customClass="LossesViewController" customModule="StandWithUkraineUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bpX-lN-4OL">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="-1" estimatedSectionHeaderHeight="-1" sectionFooterHeight="-1" estimatedSectionFooterHeight="-1" translatesAutoresizingMaskIntoConstraints="NO" id="q8C-Mv-DZt">
+                                <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            </tableView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="bgh-jT-6rE"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="q8C-Mv-DZt" firstAttribute="leading" secondItem="bgh-jT-6rE" secondAttribute="leading" id="97K-aE-vX1"/>
+                            <constraint firstItem="q8C-Mv-DZt" firstAttribute="trailing" secondItem="bgh-jT-6rE" secondAttribute="trailing" id="JYu-dt-4sW"/>
+                            <constraint firstAttribute="bottom" secondItem="q8C-Mv-DZt" secondAttribute="bottom" id="Nb3-Xp-X8B"/>
+                            <constraint firstItem="q8C-Mv-DZt" firstAttribute="top" secondItem="bpX-lN-4OL" secondAttribute="top" id="ZqZ-WV-llS"/>
+                        </constraints>
+                    </view>
+                    <navigationItem key="navigationItem" title="All Losses" id="6cA-Ca-8Ib"/>
+                    <connections>
+                        <outlet property="tableView" destination="q8C-Mv-DZt" id="EIj-iz-kBt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hmw-wV-3QB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="118" y="-87"/>
+        </scene>
+        <!--Equipment Detail Losses View Controller-->
+        <scene sceneID="G4S-Bj-aZW">
+            <objects>
+                <viewController storyboardIdentifier="EquipmentDetailLossesViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="2S5-vR-TKq" customClass="EquipmentDetailLossesViewController" customModule="StandWithUkraineUIKit" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LAx-Ez-v1b">
+                        <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <viewLayoutGuide key="safeArea" id="rbH-Gd-vrB"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4dw-2D-7nc" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1084.7328244274809" y="-87.323943661971839"/>
+        </scene>
+    </scenes>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

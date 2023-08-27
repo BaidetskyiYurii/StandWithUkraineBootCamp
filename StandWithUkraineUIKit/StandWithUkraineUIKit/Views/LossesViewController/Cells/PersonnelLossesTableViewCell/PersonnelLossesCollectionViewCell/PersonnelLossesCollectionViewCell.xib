@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21679"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="PersonnelLossesCollectionViewCell" id="kjG-la-kwy" customClass="PersonnelLossesCollectionViewCell" customModule="StandWithUkraineUIKit" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="252" height="110"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="mf6-d3-oLh" customClass="PersonnelLossesCollectionViewCell" customModule="StandWithUkraineUIKit" customModuleProvider="target">
+                <rect key="frame" x="0.0" y="0.0" width="252" height="110"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S25-WM-kSf">
+                        <rect key="frame" x="0.0" y="0.0" width="252" height="110"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Day of war: 1" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wa3-7w-GnF">
+                                <rect key="frame" x="20.000000000000007" y="20" width="111.66666666666669" height="30"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="rUv-iq-wEK"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Personnel losses: 1000" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="INj-8b-dam">
+                                <rect key="frame" x="20" y="65" width="185" height="20"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="20" id="7YF-bf-QOc"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" name="themeBackground"/>
+                        <constraints>
+                            <constraint firstItem="wa3-7w-GnF" firstAttribute="leading" secondItem="S25-WM-kSf" secondAttribute="leading" constant="20" id="GJf-dg-K7j"/>
+                            <constraint firstItem="INj-8b-dam" firstAttribute="top" secondItem="wa3-7w-GnF" secondAttribute="bottom" constant="15" id="HG5-51-Nq4"/>
+                            <constraint firstItem="INj-8b-dam" firstAttribute="leading" secondItem="S25-WM-kSf" secondAttribute="leading" constant="20" id="L2K-a0-8wE"/>
+                            <constraint firstItem="wa3-7w-GnF" firstAttribute="top" secondItem="S25-WM-kSf" secondAttribute="top" constant="20" id="xal-6N-1sr"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="S25-WM-kSf" secondAttribute="bottom" id="U2W-k7-A64"/>
+                    <constraint firstItem="S25-WM-kSf" firstAttribute="top" secondItem="mf6-d3-oLh" secondAttribute="top" id="oYQ-ma-afy"/>
+                    <constraint firstItem="S25-WM-kSf" firstAttribute="leading" secondItem="mf6-d3-oLh" secondAttribute="leading" id="sPN-Qg-W50"/>
+                    <constraint firstAttribute="trailing" secondItem="S25-WM-kSf" secondAttribute="trailing" id="wbJ-aC-pSR"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="48" height="110"/>
+            <connections>
+                <outlet property="cellBackgroundView" destination="S25-WM-kSf" id="Q2S-AD-dS2"/>
+                <outlet property="dayOfWar" destination="wa3-7w-GnF" id="SXM-zq-DOB"/>
+                <outlet property="personnelLosees" destination="INj-8b-dam" id="Cjb-eT-rWG"/>
+            </connections>
+            <point key="canvasLocation" x="-896.18320610687022" y="-293.66197183098592"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <namedColor name="themeBackground">
+            <color red="0.13333333333333333" green="0.21568627450980393" blue="0.32941176470588235" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
