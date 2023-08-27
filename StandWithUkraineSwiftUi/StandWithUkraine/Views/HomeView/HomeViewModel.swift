@@ -8,7 +8,6 @@
 import SwiftUI
 
 final class HomeViewModel: ObservableObject {
-    
     @Published var isTabViewShown = true
     @Published var tabSelected: Tab = .equipment
 }

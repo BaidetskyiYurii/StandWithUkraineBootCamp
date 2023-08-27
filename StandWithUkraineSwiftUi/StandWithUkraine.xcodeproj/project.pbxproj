@@ -55,7 +55,6 @@
 		639E2B7C2A980E88004FE0A6 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E2B7B2A980E88004FE0A6 /* Tab.swift */; };
 		639E2B7E2A98CC83004FE0A6 /* UserDefaultsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E2B7D2A98CC83004FE0A6 /* UserDefaultsManager.swift */; };
 		639E2B822A98F755004FE0A6 /* SignInViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E2B812A98F755004FE0A6 /* SignInViewModel.swift */; };
-		639E2B842A98FA6E004FE0A6 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E2B832A98FA6E004FE0A6 /* CustomTextField.swift */; };
 		639E2B862A98FC31004FE0A6 /* String+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E2B852A98FC31004FE0A6 /* String+Extensions.swift */; };
 		639E2B882A98FCC8004FE0A6 /* LargeButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E2B872A98FCC8004FE0A6 /* LargeButton.swift */; };
 		639E2B8A2A98FD3D004FE0A6 /* EquipmentLossesItemViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 639E2B892A98FD3D004FE0A6 /* EquipmentLossesItemViewModel.swift */; };
@@ -134,7 +133,6 @@
 		639E2B7B2A980E88004FE0A6 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
 		639E2B7D2A98CC83004FE0A6 /* UserDefaultsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserDefaultsManager.swift; sourceTree = "<group>"; };
 		639E2B812A98F755004FE0A6 /* SignInViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInViewModel.swift; sourceTree = "<group>"; };
-		639E2B832A98FA6E004FE0A6 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
 		639E2B852A98FC31004FE0A6 /* String+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Extensions.swift"; sourceTree = "<group>"; };
 		639E2B872A98FCC8004FE0A6 /* LargeButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LargeButton.swift; sourceTree = "<group>"; };
 		639E2B892A98FD3D004FE0A6 /* EquipmentLossesItemViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EquipmentLossesItemViewModel.swift; sourceTree = "<group>"; };
@@ -273,7 +271,6 @@
 			isa = PBXGroup;
 			children = (
 				631C37C02A94C373008B2EA6 /* TabBar.swift */,
-				639E2B832A98FA6E004FE0A6 /* CustomTextField.swift */,
 				639E2B872A98FCC8004FE0A6 /* LargeButton.swift */,
 				631C37E92A953418008B2EA6 /* LoadingView.swift */,
 				631C37EF2A953E65008B2EA6 /* NavigationBarBackButton.swift */,
@@ -572,7 +569,6 @@
 				639E2B782A9801FC004FE0A6 /* AppErrors.swift in Sources */,
 				631C37EC2A953448008B2EA6 /* UIApplication+Extension.swift in Sources */,
 				631C37E42A950ED5008B2EA6 /* PersonnelLossesModel.swift in Sources */,
-				639E2B842A98FA6E004FE0A6 /* CustomTextField.swift in Sources */,
 				639E2B7E2A98CC83004FE0A6 /* UserDefaultsManager.swift in Sources */,
 				639E2B742A97F092004FE0A6 /* ViewState.swift in Sources */,
 				631C380F2A967CBD008B2EA6 /* OnboardingView.swift in Sources */,

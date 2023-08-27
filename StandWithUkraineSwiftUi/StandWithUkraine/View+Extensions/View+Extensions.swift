@@ -50,10 +50,6 @@ extension View {
 }
 
 extension View {
-    func customTextField() -> some View {
-        modifier(CustomTextField())
-    }
-    
     func largeButton() -> some View {
         modifier(LargeButton())
     }

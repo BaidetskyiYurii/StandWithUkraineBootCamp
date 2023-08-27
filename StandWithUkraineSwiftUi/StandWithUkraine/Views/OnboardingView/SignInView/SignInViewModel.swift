@@ -8,14 +8,13 @@
 import SwiftUI
 
 final class SignInViewModel: ObservableObject {
-    @Published var answer = ""
     @Published var isLoading = false
     @Published var isSuccess = false
     
-    func logIn(completion: (() -> ())? = nil) {
+    func logIn(isRightChoice: Bool, completion: (() -> ())? = nil) {
         isLoading = true
         
-        if answer.capitalized == "Glory To Heroes" {
+        if isRightChoice {
             DispatchQueue.main.async { [weak self] in
                 guard let self else { return }
                 isSuccess = true

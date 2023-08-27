@@ -17,16 +17,17 @@ struct SignInView: View {
             Text("Sign in")
                 .font(.blackOpsOneRegular(20))
             
-            VStack {
-                Text("Just write the answer when someone says to you:")
+            VStack(spacing: scaled(10)) {
+                Text("Just choose correct answer")
                     .font(.blackOpsOneRegular(20))
+                    .fixedSize()
                 
                 HStack {
-                    Text("Glory to")
+                    Text("Do you support")
                         .font(.blackOpsOneRegular(20))
                         .foregroundColor(.blue)
                     
-                    Text("Ukraine")
+                    Text("Ukraine?")
                         .font(.blackOpsOneRegular(20))
                         .foregroundColor(.yellow)
                 }
@@ -35,22 +36,33 @@ struct SignInView: View {
             VStack(alignment: .leading) {
                 Text("Your Answer")
                     .font(.blackOpsOneRegular(15))
-                TextField("", text: $viewModel.answer)
-                    .customTextField()
-            }
-            
-            Button {
-                viewModel.logIn {
-                    show.toggle()
-                    sessionManager.signIn()
+                
+                Button {
+                    viewModel.logIn(isRightChoice: true) {
+                        show.toggle()
+                        sessionManager.signIn()
+                    }
+                } label: {
+                    HStack {
+                        Text("Yes, of course!")
+                            .font(.blackOpsOneRegular(20))
+                    }
+                    .largeButton()
                 }
-            } label: {
-                HStack {
-                    Image(systemName: "arrow.right")
-                    Text("Sign in")
-                        .font(.blackOpsOneRegular(20))
+                
+                Button {
+                    viewModel.logIn(isRightChoice: false) {
+                        show.toggle()
+                    }
+                } label: {
+                    HStack {
+                        Text("No, I do not")
+                            .foregroundColor(.themeShadow)
+                            .font(.blackOpsOneRegular(20))
+                    }
+                    .largeButton()
+                    
                 }
-                .largeButton()
             }
         }
         .padding(scaled(30))
@@ -76,5 +88,6 @@ struct SignInView: View {
 struct SignInView_Previews: PreviewProvider {
     static var previews: some View {
         SignInView(show: .constant(true))
+            .environmentObject(SessionManager())
     }
 }
